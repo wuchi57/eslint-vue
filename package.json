@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky install" ,
+    "prepare": "husky install",
     "lint": "eslint --quiet --fix"
   },
   "dependencies": {
@@ -27,6 +27,8 @@
     "vite": "^4.4.5"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,vue}": [ "yarn run lint" ]
+    "**/*.{js,jsx,ts,tsx,vue}": [
+      "yarn run lint"
+    ]
   }
 }
