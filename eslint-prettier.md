@@ -10,15 +10,16 @@ yarn add -D eslint prettier eslint-plugin-prettier eslint-config-prettier husky 
 ```  
 <br>
 
-### 配置相关：
-ESLint 配置选用 airbnb-base
-
-Prettier 相关配置位于 .prettierrc.json  
+### 机制说明：
+当运行 git commit 时，触发 ESLint 检查所提交代码缺陷并自动修复，ESLint 再自动触发 Prettier 对代码进行格式化，最后提交优化后的代码
 
 <br>
 
-### 机制说明：
-当运行 git commit 时，触发 ESLint 检查所提交代码缺陷并自动修复，ESLint 再自动触发 Prettier 对代码进行格式化，最后提交优化后的代码
+### 配置相关：
+ESLint 配置选用 airbnb-base
+
+Prettier 相关配置位于 .prettierrc.json，具体说明可查看 [Prettier 官方文档](https://prettier.io/docs/en/options.html)
+
 
 <br>
 
