@@ -64,8 +64,17 @@ const config = {
   }
 }
 ```
+
+如果希望在控制台单独运行 ESLint 或 Prettier, 可以输入以下命令：
+```shell
+npx eslint . --fix
+npx prettier --write .
+```
+
 如果不希望在提交代码时进行检测，可以注释 .husky -> pre-commit 最后一行，如：
 ```shell
 # npx lint-staged --allow-empty
 ```
+
 如果不希望在编写代码中有 ESLint、Prettier 告警提示，可以在 VSCode/Webstorm 插件设置中禁用 ESLint 和 Prettier 插件
+
